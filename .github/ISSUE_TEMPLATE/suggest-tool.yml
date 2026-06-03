@@ -1,0 +1,46 @@
+﻿---
+name: "💡 Suggest an AI Tool"
+about: "Submit a new AI tool to be added to AIToolKit"
+title: "[Tool Suggestion] "
+labels: ["suggestion", "new-tool"]
+assignees: ""
+---
+
+## Tool Details
+
+**Tool Name:** 
+<!-- e.g. Midjourney -->
+
+**Website URL:** 
+<!-- e.g. https://midjourney.com -->
+
+**Category:**
+<!-- Choose one -->
+- [ ] Chat & Assistants
+- [ ] Writing
+- [ ] Image Generation
+- [ ] Video
+- [ ] Coding
+- [ ] Audio & Music
+- [ ] Design
+- [ ] Marketing
+- [ ] Productivity
+- [ ] Research
+
+**Pricing:**
+- [ ] Free
+- [ ] Freemium
+- [ ] Paid
+
+**Short Description (1-2 sentences):**
+<!-- What does it do and why is it useful? -->
+
+**Key Tags (comma separated):**
+<!-- e.g. image generation, art, design, photorealistic -->
+
+**Why should this be added?**
+<!-- Why is this tool noteworthy or popular? -->
+
+---
+
+Thank you for your suggestion! Our automated system will review it.

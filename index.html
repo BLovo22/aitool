@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Discover the best AI tools of 2026 for writing, coding, design, video, audio, and productivity. Curated directory with alternatives, scenarios, and weekly updates." />
+  <meta name="keywords" content="AI tools, best AI tools 2026, AI directory, ChatGPT, Midjourney, Claude, AI writing, AI image generator, AI coding tools, free AI tools, AI alternatives" />
+
+  <meta property="og:title" content="AIToolKit — Discover the Best AI Tools of 2026" />
+  <meta property="og:description" content="Curated directory of the best AI tools. Find tools by scenario, compare alternatives, and discover trending AI apps." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://aitoolkit.io" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AIToolKit — Discover the Best AI Tools of 2026" />
+  <meta name="twitter:description" content="Curated directory of the best AI tools. Find, compare, and discover." />
+
+  <link rel="canonical" href="https://aitoolkit.io" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <title>AIToolKit — Discover the Best AI Tools of 2026</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Google AdSense (replace with your publisher ID) -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXX" crossorigin="anonymous"></script>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "AIToolKit",
+    "url": "https://aitoolkit.io",
+    "description": "Discover the best AI tools for writing, coding, design, video, audio, and productivity.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://aitoolkit.io?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="/" class="logo" aria-label="AIToolKit Home" onclick="window.AIToolKit.resetAll();return false;">
+        <div class="logo-icon">⚡</div>
+        AI<span class="logo-accent">ToolKit</span>
+      </a>
+
+      <div class="search-wrapper">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="searchInput" class="search-input" placeholder="Search tools or scenarios... (Ctrl+K)" aria-label="Search AI tools" />
+      </div>
+
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-badge">🚀 Updated June 2026 · Auto-refreshes weekly</div>
+      <h1>Discover the <span>Best AI Tools</span><br>for Everything You Do</h1>
+      <p>A hand-curated, auto-updating directory of the most powerful AI tools. Browse by scenario, compare alternatives, and find the perfect AI companion for your workflow.</p>
+
+      <div class="stats-bar">
+        <div class="stat-item"><div class="stat-value" id="toolCount">30</div><div class="stat-label">Tools Curated</div></div>
+        <div class="stat-item"><div class="stat-value">10</div><div class="stat-label">Categories</div></div>
+        <div class="stat-item"><div class="stat-value">6</div><div class="stat-label">Use Scenarios</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Scenarios ===== -->
+  <section class="scenarios-section" id="scenarios">
+    <div class="container">
+      <div id="scenarioSection"></div>
+    </div>
+  </section>
+
+  <!-- ===== Ad Unit ===== -->
+  <div class="container"><div class="ad-unit"><div><span class="ad-unit-label">ADVERTISEMENT</span><p>Google AdSense — Banner</p></div></div></div>
+
+  <!-- ===== Filters ===== -->
+  <section class="filters-section" id="filters">
+    <div class="container">
+      <div class="category-filters" id="categoryFilters"></div>
+      <div class="filters-row">
+        <div class="pricing-filters" id="pricingFilters"></div>
+        <div class="sort-wrapper">
+          <label class="sort-label">Sort:</label>
+          <select id="sortSelect" class="sort-select"></select>
+        </div>
+      </div>
+      <div class="tag-cloud" id="tagCloud"></div>
+    </div>
+  </section>
+
+  <!-- ===== Tools Grid ===== -->
+  <section class="tools-section" id="tools">
+    <div class="container">
+      <div class="results-count" id="resultsCount"></div>
+      <div class="tools-grid" id="toolsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="#filters">Browse</a><a href="blog/">Blog</a>
+        <a href="https://github.com/YOUR_USERNAME/aitoolkit/issues/new?template=suggest-tool.yml" target="_blank">Suggest a Tool</a>
+        <a href="blog/">Blog</a><a href="#">Privacy Policy</a>
+      </div>
+      <p>© 2026 AIToolKit. All rights reserved. Made with ❤️ for the AI community.</p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
