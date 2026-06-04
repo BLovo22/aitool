@@ -352,8 +352,7 @@
     state.searchQuery = scenarioId;
     const input = $("#searchInput");
     if (input) input.value = "";
-    // Use scenario as a special search
-    state.searchQuery = "";
+    // scenario filter active
     state.activeCategory = "all";
     state.activeTag = null;
 
