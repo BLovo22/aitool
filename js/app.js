@@ -436,6 +436,13 @@
     });
   }
 
+  
+    // Back to top visibility
+    window.addEventListener("scroll", () => {
+      const btn = document.getElementById("backToTop");
+      if (btn) btn.classList.toggle("visible", window.scrollY > 400);
+    });
+
   // --- Init ---
   function init() {
     initTheme();

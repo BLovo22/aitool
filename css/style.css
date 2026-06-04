@@ -241,3 +241,19 @@ input, select { font-family: inherit; }
 
 /* Results + Sort row */
 .filters-section .filters-row { margin-top: 12px; }
+/* ===== Back to Top ===== */
+.back-to-top {
+  position: fixed; bottom: 24px; right: 24px;
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  background: var(--accent); color: white;
+  font-size: 1.1rem;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: var(--shadow-lg);
+  opacity: 0; visibility: hidden;
+  transition: all 0.3s;
+  z-index: 150;
+  border: none; cursor: pointer;
+}
+.back-to-top.visible { opacity: 1; visibility: visible; }
+.back-to-top:hover { background: var(--accent-hover); transform: translateY(-2px); }
