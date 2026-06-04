@@ -361,7 +361,7 @@
     const scenario = SCENARIOS.find((s) => s.id === scenarioId);
     if (!scenario) return;
     $("#searchInput").value = scenario.name;
-    state.searchQuery = scenario.name.toLowerCase();
+    state.searchQuery = scenarioId;
     renderAll();
     window.scrollTo({ top: $("#toolsGrid")?.offsetTop - 100, behavior: "smooth" });
   }
