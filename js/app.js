@@ -249,7 +249,9 @@
       </div>
     `).join("");
   }
-  function renderAll() {`n    renderTrending();`n    renderCategories();
+  function renderAll() {
+    renderTrending();
+    renderCategories();
     renderPricing();
     renderSort();
     renderTagCloud();
