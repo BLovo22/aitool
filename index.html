@@ -105,18 +105,48 @@
   <!-- ===== Ad Unit ===== -->
   <div class="container"><div class="ad-unit"><div><span class="ad-unit-label">ADVERTISEMENT</span><p>Google AdSense — Banner</p></div></div></div>
 
-  <!-- ===== Filters ===== -->
+    <!-- ===== Filters ===== -->
   <section class="filters-section" id="filters">
     <div class="container">
-      <div class="category-filters" id="categoryFilters"></div>
+      <div class="filter-panel">
+        <div class="filter-group">
+          <button class="filter-group-header" onclick="this.parentElement.classList.toggle('collapsed')">
+            <span>📂 Categories</span>
+            <span class="filter-arrow">▾</span>
+          </button>
+          <div class="filter-group-body">
+            <div class="category-filters" id="categoryFilters"></div>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <button class="filter-group-header" onclick="this.parentElement.classList.toggle('collapsed')">
+            <span>💰 Pricing</span>
+            <span class="filter-arrow">▾</span>
+          </button>
+          <div class="filter-group-body">
+            <div class="pricing-filters" id="pricingFilters"></div>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <button class="filter-group-header" onclick="this.parentElement.classList.toggle('collapsed')">
+            <span>🏷️ Tags</span>
+            <span class="filter-arrow">▾</span>
+          </button>
+          <div class="filter-group-body">
+            <div class="tag-cloud" id="tagCloud"></div>
+          </div>
+        </div>
+      </div>
+
       <div class="filters-row">
-        <div class="pricing-filters" id="pricingFilters"></div>
+        <div class="results-count" id="resultsCount"></div>
         <div class="sort-wrapper">
           <label class="sort-label">Sort:</label>
           <select id="sortSelect" class="sort-select"></select>
         </div>
       </div>
-      <div class="tag-cloud" id="tagCloud"></div>
     </div>
   </section>
 
