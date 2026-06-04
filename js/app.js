@@ -233,8 +233,23 @@
       .join("");
   }
 
-  function renderAll() {
-    renderCategories();
+  
+  // --- Trending ---
+  function renderTrending() {
+    const container = document.getElementById("trendingGrid");
+    if (!container) return;
+    const trending = TOOLS.filter(t => t.badge === "hot" || t.badge === "trending").slice(0, 6);
+    container.innerHTML = trending.map(tool => `
+      <div class="trending-card" onclick="window.AIToolKit.openDetail('${tool.slug}')">
+        <div class="trending-icon">${getCategoryIcon(tool.category)}</div>
+        <div class="trending-info">
+          <div class="trending-name">${tool.name} ${getBadgeHTML(tool.badge)}</div>
+          <div class="trending-desc">${tool.description.slice(0, 80)}...</div>
+        </div>
+      </div>
+    `).join("");
+  }
+  function renderAll() {`n    renderTrending();`n    renderCategories();
     renderPricing();
     renderSort();
     renderTagCloud();
